@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Principal">
+
+    <TextView
+        android:id="@+id/lblBienvenido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblBienvenido"
+        android:textSize="18sp"
+        android:layout_marginBottom="5sp"
+        android:gravity="center_horizontal"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnPerfil"
+            android:onClick="perfil"
+            android:textSize="11sp"
+            android:layout_margin="1sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnMisCosas"
+            android:textSize="11sp"
+            android:onClick="misVentas"
+            android:layout_margin="1sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnServicios"
+            android:textSize="11sp"
+            android:onClick="servicios"
+            android:layout_margin="1sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnProductos"
+            android:textSize="11sp"
+            android:onClick="productos"
+            android:layout_margin="1sp"/>
+
+    </LinearLayout>
+    </ScrollView>
+    <FrameLayout
+        android:id="@+id/contenedorFragments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

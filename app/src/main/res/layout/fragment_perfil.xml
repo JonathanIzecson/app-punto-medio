@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerfilFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:src="@drawable/baseline_face_black_24dp"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/lblPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Perfil"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/lblSexo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Perfil"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/lblTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Perfil"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/lblEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Perfil"
+            android:gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/btnModificar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnModificar"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="2sp">
+
+            <Button
+                android:id="@+id/btnAgregarProducto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="@string/btnAgregarProduto"/>
+            <Button
+                android:id="@+id/btnAgregarServicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="@string/btnAgregarServicio"/>
+            <Button
+                android:id="@+id/btnEliminarPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="@string/btnEliminarPost"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
